@@ -115,7 +115,7 @@ resource "aws_security_group" "server-sg" {
     from_port       = 80
     protocol        = "tcp"
     to_port         = 80
-    security_groups = [aws_security_group.alb-sg.id]   # Attention
+    security_groups = [aws_security_group.alb-sg.id]   
   }
 
   ingress {
