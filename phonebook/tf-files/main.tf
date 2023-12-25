@@ -7,7 +7,7 @@ data "aws_subnets" "pb-subnets" {
     name   = "vpc-id"
     values = [data.aws_vpc.selected.id]
   }
-  filter {                       #  Notes:  A load balancer cannot be attached to multiple subnets in the same Availability Zone.
+  filter {
     name   = "tag:Name"
     values = ["default*"]
   }
