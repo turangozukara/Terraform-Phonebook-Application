@@ -4,7 +4,6 @@ import os
 
 app = Flask(__name__)
 
-# Once we are done with the database, we are going to create database.
 # we need to configure our database. I've explained this part before. Lets have a look at these configuration. 
 app.config['MYSQL_DATABASE_HOST'] = os.getenv('MYSQL_DATABASE_HOST')
 app.config['MYSQL_DATABASE_USER'] = 'admin'
