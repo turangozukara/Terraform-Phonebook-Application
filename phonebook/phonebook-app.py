@@ -10,13 +10,11 @@ app.config['MYSQL_DATABASE_PASSWORD'] = 'xxxxx'
 app.config['MYSQL_DATABASE_DB'] = 'phonebook'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 
-mysql = MySQL() # We are using this function to initialize mysql 
+mysql = MySQL()
 mysql.init_app(app) 
 connection = mysql.connect()
 connection.autocommit(True)
 cursor = connection.cursor()
-
-# Write a function named `init_todo_db` create phonebook table within clarusway_phonebook db, if it doesn't exist
 
 # Lets paste Because of the id is auto_incremental, I don't need to worry about to id column. mysql is going to give id on behalf of us.
 def init_phonebook_db():
