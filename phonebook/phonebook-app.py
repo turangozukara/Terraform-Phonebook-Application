@@ -27,7 +27,6 @@ def init_phonebook_db():
     """
     cursor.execute(phonebook_table)
 
-# `[{'id': 1, 'name':'XXXX', 'number': 'XXXXXX'}]`.
 
 # This function is to find my results that has "keyword" into database
 def find_persons(keyword):
