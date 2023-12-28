@@ -32,7 +32,7 @@ def find_persons(keyword):
     SELECT * FROM phonebook WHERE name like '%{keyword.strip().lower()}%';
     """
     cursor.execute(query)
-    result = cursor.fetchall() # I've got the result and assign them result variable. 
+    result = cursor.fetchall() 
     persons =[{'id':row[0], 'name':row[1].strip().title(), 'number':row[2]} for row in result] # this is a list comprehension, if there is a result coming from database, They are located these results one by one into the list and assigned it to the person variable. title makes the first letter capital
     if len(persons) == 0: # if there is no result, thanks to this if condition, No result massages is assigned to the persons variable.
         persons = [{'name':'No Result', 'number':'No Result'}] 
