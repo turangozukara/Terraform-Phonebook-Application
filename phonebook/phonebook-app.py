@@ -27,8 +27,6 @@ def init_phonebook_db():
     """
     cursor.execute(phonebook_table)
 
-
-# This function is to find my results that has "keyword" into database
 def find_persons(keyword):
     # You are very familiar with this query. This query will select all columns where the name like keyword. strip will remove all the white spaces, and lower will turn uppercase into lowercase.
     query = f"""
