@@ -25,7 +25,7 @@ def init_phonebook_db():
     PRIMARY KEY (id)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
     """
-    cursor.execute(phonebook_table) # This is the connection to our database.
+    cursor.execute(phonebook_table)
 
 # Write a function named `find_persons` which finds persons' record using the keyword from the phonebook table in the db,and returns result as list of dictionary 
 # `[{'id': 1, 'name':'XXXX', 'number': 'XXXXXX'}]`.
