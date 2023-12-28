@@ -16,7 +16,6 @@ connection = mysql.connect()
 connection.autocommit(True)
 cursor = connection.cursor()
 
-# Lets paste Because of the id is auto_incremental, I don't need to worry about to id column. mysql is going to give id on behalf of us.
 def init_phonebook_db():
     phonebook_table = """
     CREATE TABLE IF NOT EXISTS phonebook.phonebook(
