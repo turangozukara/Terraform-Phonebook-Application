@@ -44,7 +44,7 @@ def insert_person(name, number):
     """
     cursor.execute(query)
     row = cursor.fetchone()
-    if row is not None: # If the row is not none, it means, I have a row that has same name given by a user, We'll return user with a massage
+    if row is not None: 
         return f'Person with name {row[1].title()} already exits.'
 
     # If our database doesn't have any name given by user, we can add that name into it. 
