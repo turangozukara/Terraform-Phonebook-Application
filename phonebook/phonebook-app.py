@@ -53,7 +53,7 @@ def insert_person(name, number):
     """
     cursor.execute(insert)
     result = cursor.fetchall()
-    return f'Person {name.strip().title()} added to Phonebook successfully' # person given by user added to phonebook 
+    return f'Person {name.strip().title()} added to Phonebook successfully'
 
 # Write a function named `update_person` which updates the person's record in the phonebook table,
 # and returns text info about result of the operation
