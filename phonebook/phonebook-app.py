@@ -47,7 +47,6 @@ def insert_person(name, number):
     if row is not None: 
         return f'Person with name {row[1].title()} already exits.'
 
-    # If our database doesn't have any name given by user, we can add that name into it. 
     insert = f"""
     INSERT INTO phonebook (name, number)
     VALUES ('{name.strip().lower()}', '{number}');
