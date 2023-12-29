@@ -34,7 +34,7 @@ def find_persons(keyword):
     cursor.execute(query)
     result = cursor.fetchall() 
     persons =[{'id':row[0], 'name':row[1].strip().title(), 'number':row[2]} for row in result]
-    if len(persons) == 0: # if there is no result, thanks to this if condition, No result massages is assigned to the persons variable.
+    if len(persons) == 0:
         persons = [{'name':'No Result', 'number':'No Result'}] 
     return persons
 
