@@ -39,7 +39,6 @@ def find_persons(keyword):
     return persons
 
 def insert_person(name, number):
-    # We've first checked if there is a same person in my database. Thats why, I need to use exact name here with strip and lower methods.
     query = f"""
     SELECT * FROM phonebook WHERE name like '{name.strip().lower()}';
     """
