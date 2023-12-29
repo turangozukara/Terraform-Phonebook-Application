@@ -38,8 +38,6 @@ def find_persons(keyword):
         persons = [{'name':'No Result', 'number':'No Result'}] 
     return persons
 
-# and returns text info about result of the operation
-
 # We've defined insert_person function. at this time, I'll put name and number as parameter. 
 def insert_person(name, number):
     # We've first checked if there is a same person in my database. Thats why, I need to use exact name here with strip and lower methods.
