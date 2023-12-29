@@ -38,8 +38,6 @@ def find_persons(keyword):
         persons = [{'name':'No Result', 'number':'No Result'}] 
     return persons
 
-
-# Write a function named `insert_person` which inserts person into the phonebook table in the db,
 # and returns text info about result of the operation
 
 # We've defined insert_person function. at this time, I'll put name and number as parameter. 
