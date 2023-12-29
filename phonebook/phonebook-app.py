@@ -63,7 +63,7 @@ def update_person(name, number):
     """
     cursor.execute(query)
     row = cursor.fetchone()
-    if row is None: # First we need to control if there is any person with the same name into our database. if we don't have, a warning massage will raise
+    if row is None: 
         return f'Person with name {name.strip().title()} does not exist.'
     # if there is a person with the given name, we can update it.
     update = f"""
