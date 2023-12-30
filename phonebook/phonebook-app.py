@@ -87,7 +87,6 @@ def delete_person(name):
     cursor.execute(delete)
     return f'Phone record of {name.strip().title()} is deleted from the phonebook successfully'
 
-# Write a function named `find_records` which finds phone records by keyword using `GET` and `POST` methods,
 # using template files named `index.html` given under `templates` folder
 # and assign to the static route of ('/')
 @app.route('/', methods=['GET', 'POST'])
