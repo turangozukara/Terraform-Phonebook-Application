@@ -63,7 +63,6 @@ def update_person(name, number):
     row = cursor.fetchone()
     if row is None: 
         return f'Person with name {name.strip().title()} does not exist.'
-    # if there is a person with the given name, we can update it.
     update = f"""
     UPDATE phonebook
     SET name='{row[1]}', number = '{number}'
