@@ -84,7 +84,7 @@ def delete_person(name):
     DELETE FROM phonebook
     WHERE id= {row[0]};
     """
-    cursor.execute(delete) # And a magssage will be shown to be informed.
+    cursor.execute(delete)
     return f'Phone record of {name.strip().title()} is deleted from the phonebook successfully'
 
 # Write a function named `find_records` which finds phone records by keyword using `GET` and `POST` methods,
