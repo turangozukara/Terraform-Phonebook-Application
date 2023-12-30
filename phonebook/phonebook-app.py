@@ -78,7 +78,7 @@ def delete_person(name):
     """
     cursor.execute(query)
     row = cursor.fetchone()
-    if row is None: # Again we need to control if we have this person. then, If we don't have, there is seen a warning massage like this
+    if row is None:
         return f'Person with name {name.strip().title()} does not exist, no need to delete.'
 
     # If we have this person, we'll delete his row using the querry.
