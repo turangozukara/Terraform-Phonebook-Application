@@ -72,8 +72,6 @@ def update_person(name, number):
 
     return f'Phone record of {name.strip().title()} is updated successfully'
 
-
-# Write a function named `delete_person` which deletes person record from the phonebook table in the db,
 # and returns returns text info about result of the operation
 def delete_person(name):
     query = f"""
