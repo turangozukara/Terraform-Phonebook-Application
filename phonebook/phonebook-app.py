@@ -99,7 +99,7 @@ def find_records():
 @app.route('/add', methods=['GET', 'POST'])
 def add_record():
     if request.method == 'POST':
-        name = request.form['username'] # I'll get input from html file and assign it to name variable
+        name = request.form['username']
         if name is None or name.strip() == "":
             return render_template('add-update.html', not_valid=True, message='Invalid input: Name can not be empty', show_result=False, action_name='save', developer_name='Turan')
         elif name.isdecimal(): # This will check if the name given by user has any decimal character. If it has, a warning massage will raise 
