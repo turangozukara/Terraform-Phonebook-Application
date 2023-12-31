@@ -102,7 +102,7 @@ def add_record():
         name = request.form['username']
         if name is None or name.strip() == "":
             return render_template('add-update.html', not_valid=True, message='Invalid input: Name can not be empty', show_result=False, action_name='save', developer_name='Turan')
-        elif name.isdecimal(): # This will check if the name given by user has any decimal character. If it has, a warning massage will raise 
+        elif name.isdecimal():
             return render_template('add-update.html', not_valid=True, message='Invalid input: Name of person should be text', show_result=False, action_name='save', developer_name='Turan')
         # We'll check the phone number given by user here 
         phone_number = request.form['phonenumber']
