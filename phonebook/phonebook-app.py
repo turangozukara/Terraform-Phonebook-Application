@@ -105,7 +105,7 @@ def add_record():
         elif name.isdecimal():
             return render_template('add-update.html', not_valid=True, message='Invalid input: Name of person should be text', show_result=False, action_name='save', developer_name='Turan')
         phone_number = request.form['phonenumber']
-        if phone_number is None or phone_number.strip() == "": # The user may have forgotten to give a number. This function will control whether the phone number is empty or not. if it is empty, a warning massage will be raising. 
+        if phone_number is None or phone_number.strip() == "":
             return render_template('add-update.html', not_valid=True, message='Invalid input: Phone number can not be empty', show_result=False, action_name='save', developer_name='Turan')
         elif not phone_number.isdecimal(): # This function will check if the number has at least one non-numeric character. If it has, again a massage will raise.
             return render_template('add-update.html', not_valid=True, message='Invalid input: Phone number should be in numeric format', show_result=False, action_name='save', developer_name='Turan')
