@@ -107,7 +107,7 @@ def add_record():
         phone_number = request.form['phonenumber']
         if phone_number is None or phone_number.strip() == "":
             return render_template('add-update.html', not_valid=True, message='Invalid input: Phone number can not be empty', show_result=False, action_name='save', developer_name='Turan')
-        elif not phone_number.isdecimal(): # This function will check if the number has at least one non-numeric character. If it has, again a massage will raise.
+        elif not phone_number.isdecimal():
             return render_template('add-update.html', not_valid=True, message='Invalid input: Phone number should be in numeric format', show_result=False, action_name='save', developer_name='Turan')
         # if everything is ok, whole those blocks will be passed, and we come here. 
         result_app = insert_person(name, phone_number)
