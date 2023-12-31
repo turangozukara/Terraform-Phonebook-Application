@@ -96,7 +96,6 @@ def find_records():
     else:
         return render_template('index.html', show_result=False, developer_name='Turan')
 
-# and assign to the static route of ('add')
 @app.route('/add', methods=['GET', 'POST'])
 def add_record():
     if request.method == 'POST':
