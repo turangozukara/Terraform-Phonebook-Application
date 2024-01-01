@@ -109,7 +109,6 @@ def add_record():
             return render_template('add-update.html', not_valid=True, message='Invalid input: Phone number can not be empty', show_result=False, action_name='save', developer_name='Turan')
         elif not phone_number.isdecimal():
             return render_template('add-update.html', not_valid=True, message='Invalid input: Phone number should be in numeric format', show_result=False, action_name='save', developer_name='Turan')
-        # if everything is ok, whole those blocks will be passed, and we come here. 
         result_app = insert_person(name, phone_number)
         return render_template('add-update.html', show_result=True, result_html=result_app, not_valid=False, action_name='save', developer_name='Turan') #In addition, There is no message shown by user here. Thats why not valid is going to be False.
     else:
