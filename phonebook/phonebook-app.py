@@ -142,8 +142,6 @@ def delete_record():
     else:
         return render_template('delete.html', show_result=False, not_valid=False, developer_name='Turan')
 
-
-# Add a statement to run the Flask application which can be reached from any host on port 80.
 if __name__== '__main__':
     init_phonebook_db()
     # app.run(debug=True)
