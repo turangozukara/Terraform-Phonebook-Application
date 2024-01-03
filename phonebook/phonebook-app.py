@@ -144,5 +144,4 @@ def delete_record():
 
 if __name__== '__main__':
     init_phonebook_db()
-    # app.run(debug=True)
     app.run(host='0.0.0.0', port=80) 
