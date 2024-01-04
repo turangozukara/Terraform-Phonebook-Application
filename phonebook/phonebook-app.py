@@ -138,7 +138,7 @@ def delete_record():
         if name is None or name.strip() == "":
             return render_template('delete.html', not_valid=True, message='Invalid input: Name can not be empty', show_result=False, developer_name='Turan')
         result_app = delete_person(name)
-        return render_template('delete.html', show_result=True, result_html=result_app, not_valid=False, developer_name='Turan') # In addition, There will be no message to be shown to the user here. Thats why not valid is going to be False.
+        return render_template('delete.html', show_result=True, result_html=result_app, not_valid=False, developer_name='Turan') 
     else:
         return render_template('delete.html', show_result=False, not_valid=False, developer_name='Turan')
 
