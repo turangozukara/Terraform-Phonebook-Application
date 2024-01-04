@@ -127,7 +127,7 @@ def update_record():
             return render_template('add-update.html', not_valid=True, message='Invalid input: Phone number should be in numeric format', show_result=False, action_name='update', developer_name='Turan')
 
         result_app = update_person(name, phone_number) #
-        return render_template('add-update.html', show_result=True, result_html=result_app, not_valid=False, action_name='update', developer_name='Turan') #Again, There is no message shown by user here. Thats why not valid is going to be False.
+        return render_template('add-update.html', show_result=True, result_html=result_app, not_valid=False, action_name='update', developer_name='Turan')
     else:
         return render_template('add-update.html', show_result=False, not_valid=False, action_name='update', developer_name='Turan')
 
